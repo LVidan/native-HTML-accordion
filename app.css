@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F3F5F8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.crd {
+  width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.crd__tl {
+  margin-bottom: 12px;
+}
+
+.crd hr {
+  margin: 20px 0;
+}
+
+.social-network {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 6px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.social-network[open] .social-network--icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.social-network__icon {
+  position: absolute;
+  right: 20px;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+
+.social-network__tl {
+  font-size: 18px;
+}
+
+.social-network__tl:hover {
+  cursor: pointer;
+}
+
+.social-network__tl:focus {
+  outline: none;
+}
+
+.social-network__tl::-webkit-details-marker {
+  display: none;
+}
+
+.social-network__tl::before {
+  font-family: "Font Awesome 5 Brands";
+}
+
+.social-network__cnt {
+  border-top: 1px solid #fff;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: 300;
+}
+
+.social-network--ig {
+  background-color: #F56040;
+}
+
+.social-network--ig .social-network__tl::before {
+  content: "\f16d";
+}
+
+.social-network--ig:hover {
+  background-color: #f88870;
+}
+
+.social-network--fb {
+  background-color: #3b5998;
+}
+
+.social-network--fb .social-network__tl::before {
+  content: "\f082";
+}
+
+.social-network--fb:hover {
+  background-color: #4c70ba;
+}
+
+.social-network--in {
+  background-color: #2867B2;
+}
+
+.social-network--in .social-network__tl::before {
+  content: "\f08c";
+}
+
+.social-network--in:hover {
+  background-color: #3a80d3;
+}
+
+.social-network--tw {
+  background-color: #14171A;
+}
+
+.social-network--tw .social-network__tl::before {
+  content: "\f081";
+}
+
+.social-network--tw:hover {
+  background-color: #2a3137;
+}
+/*# sourceMappingURL=app.css.map */

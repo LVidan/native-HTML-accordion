@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F3F5F8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crd {
+  width: 750px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+
+  &__tl {
+    margin-bottom: 12px;
+  }
+
+  & hr {
+    margin: 20px 0;
+  }
+}
+
+.social-network {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 6px;
+  transition: all .4s;
+
+  &[open] {
+    .social-network--icon {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 20px;
+    transition: ease-in-out .5s;
+  }
+
+  &__tl {
+    font-size: 18px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::before {
+      font-family: "Font Awesome 5 Brands";
+    }
+  }
+
+  &__cnt {
+    border-top: 1px solid #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+    font-weight: 300;
+  }
+
+  &--ig {
+    background-color: #F56040;
+
+    .social-network__tl::before {
+      content: "\f16d";
+    }
+
+    &:hover {
+      background-color: lighten($color: #F56040, $amount: 10%);
+    }
+  }
+
+  &--fb {
+    background-color: #3b5998;
+
+    .social-network__tl::before {
+      content: "\f082";
+    }
+
+    &:hover {
+      background-color: lighten($color: #3b5998, $amount: 10%);
+    }
+  }
+
+  &--in {
+    background-color: #2867B2;
+
+    .social-network__tl::before {
+      content: "\f08c";
+    }
+
+    &:hover {
+      background-color: lighten($color: #2867B2, $amount: 10%);
+    }
+  }
+
+  &--tw {
+    background-color: #14171A;
+
+    .social-network__tl::before {
+      content: "\f081";
+    }
+
+    &:hover {
+      background-color: lighten($color: #14171A, $amount: 10%);
+    }
+  }
+}
